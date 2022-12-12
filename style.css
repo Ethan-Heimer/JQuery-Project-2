@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --Body: #F3E9D2;
+    --Header: #40798C;
+    --TextBackground1: #40798c7a;
+    --Nav: #70A9A1;
+    --TextLight: #F2F5EA;
+    --TextDark: #2C363F;
+    --Background: #9EC1A3;
+}
+
+Body{
+    background-color: var(--Body);
+    overflow-x: hidden;
+}
+
+header{
+    background-color: var(--Header);
+
+    font-size: 6vmin;
+    padding: 4vmin;
+
+    color: var(--TextLight);
+}
+
+nav{
+    background-color: var(--Nav);
+    font-size: 4vmin;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vmin;
+
+    color: var(--TextLight);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.ImageSpace{
+    width: 100vw;
+    height: 100vmin;
+    position: relative;
+}
+
+.ImageSpace > img{
+    width: inherit;
+    height: inherit;
+    margin: 0;
+}
+
+.ImageSpaceHeader{
+    position: absolute;
+   
+    top: 25vw;
+    color: var(--TextLight);
+    font-size: 3vmin;
+
+    width: 45%;
+    background-color: var(--Header);
+    padding: 2vmin;
+    margin: 0;
+}
+
+.Left{
+    left: 0;
+}
+
+.Right{
+    right: 0;
+}
+
+.A_Header{
+    background-color: var(--Nav);
+    color: var(--TextLight);
+    padding: 1vmin;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+.A_Content{
+    padding: 5vmin;
+    background-color: var(--Background);
+    border-radius: 0;
+    border: none;
+}
+
+.Header{
+    font-size: 10vmin;
+    text-align: center;
+
+    color: var(--TextLight);
+    background-color: var(--Header);
+    width: 100vw;
+}
+
+.SubHeader{
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.SubSubHeader{
+    font-size: 2.5vmin;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.flexItem{
+  width: 33.5vw;
+  height: fit-content;
+
+  position: relative;
+  transition: .1s;
+}
+
+.flexItem > h2{
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+
+    position: absolute;
+    width: 100%;
+    scale: 0;
+    left: 0;
+    bottom: 0;
+    padding-block: 2vmin;
+    transition: .25s;
+}
+
+.flexItem:hover{
+    scale: 1.02;
+    z-index: 5;
+}
+
+.flexItem:hover h2{
+    scale: 1;
+}
+
+.flexItem > img{
+    width: inherit;
+    height: 50vmin;
+}
+
+#Date{
+    width: 15vw;
+    border: none;
+    border-radius: 1vmin;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.EventLooker{
+    display: flex;
+    justify-content: center;
+    gap: 10vmin;
+    color: var(--TextLight);
+    padding: 3.5vmin;
+}
+
+#Events{
+    background-color: var(--Nav);
+}
+
+#map{
+    width: 100vw;
+    height: 100vmin;
+}
+
+.MapSection{
+    background-color: var(--Header);
+}
+
+.ui-datepicker{
+    background-color: var(--Background);
+    border-radius: 0;
+    border: none;
+    width: 45vmin;
+    height: 30vmin;
+}
+
+.Faq{
+    background-color: var(--Nav);
+}
+
+.Explore{
+    background-color: var(--Header);
+}
+
+footer{
+    background-color: var(--Header);
+    width: 100vw;
+    padding-block: 9.5vh;
+    text-align: center;
+    color: var(--TextLight);
+    font-size: 3vmin;   
+}
